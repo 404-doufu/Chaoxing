@@ -1,0 +1,16 @@
+{
+  "name": "chaoxing-deepseek-personal-helper",
+  "version": "1.1.1",
+  "stableVersion": "1.1.0",
+  "author": "tofu",
+  "private": true,
+  "scripts": {
+    "build": "python tools/build.py && python tools/build_stable.py && python tools/build_release.py",
+    "test": "node --test tests/*.test.cjs",
+    "check": "python tools/check.py",
+    "package:release": "python tools/package_release.py"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}
