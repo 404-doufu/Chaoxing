@@ -1,0 +1,15 @@
+{
+  "name": "chaoxing-deepseek-personal-helper",
+  "version": "1.1.1",
+  "stableVersion": "1.0.0",
+  "author": "tofu",
+  "private": true,
+  "scripts": {
+    "build": "python tools/build.py && python tools/build_stable.py && python tools/build_release.py",
+    "test": "node --test tests/*.test.cjs",
+    "check": "node --check build/legacy.user.js && node --check 学习通-Edge稳定学习版.user.js && node --check 学习通-Edge后台监督.user.js && node --check 发行1.0.0.user.js"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}
